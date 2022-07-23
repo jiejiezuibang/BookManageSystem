@@ -1,0 +1,13 @@
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\BLL.dll
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\BLL.pdb
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\DAL.dll
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\DAL.pdb
+G:\vsdm\WinForm学习\BookSystem\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+G:\vsdm\WinForm学习\BookSystem\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\vsdm\WinForm学习\BookSystem\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\vsdm\WinForm学习\BookSystem\BLL\obj\Debug\BLL.dll
+G:\vsdm\WinForm学习\BookSystem\BLL\obj\Debug\BLL.pdb
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\Tools.dll
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\Tools.pdb
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\MOD.dll
+G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\MOD.pdb

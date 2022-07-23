@@ -1,0 +1,6 @@
+G:\vsdm\WinForm学习\BookSystem\Tools\bin\Debug\Tools.dll
+G:\vsdm\WinForm学习\BookSystem\Tools\bin\Debug\Tools.pdb
+G:\vsdm\WinForm学习\BookSystem\Tools\obj\Debug\Tools.csproj.AssemblyReference.cache
+G:\vsdm\WinForm学习\BookSystem\Tools\obj\Debug\Tools.csproj.CoreCompileInputs.cache
+G:\vsdm\WinForm学习\BookSystem\Tools\obj\Debug\Tools.dll
+G:\vsdm\WinForm学习\BookSystem\Tools\obj\Debug\Tools.pdb

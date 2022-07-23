@@ -1,0 +1,9 @@
+G:\vsdm\WinForm学习\BookSystem\DAL\bin\Debug\DAL.dll
+G:\vsdm\WinForm学习\BookSystem\DAL\bin\Debug\DAL.pdb
+G:\vsdm\WinForm学习\BookSystem\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\vsdm\WinForm学习\BookSystem\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\vsdm\WinForm学习\BookSystem\DAL\obj\Debug\DAL.dll
+G:\vsdm\WinForm学习\BookSystem\DAL\obj\Debug\DAL.pdb
+G:\vsdm\WinForm学习\BookSystem\DAL\bin\Debug\MOD.dll
+G:\vsdm\WinForm学习\BookSystem\DAL\bin\Debug\MOD.pdb
+G:\vsdm\WinForm学习\BookSystem\DAL\obj\Debug\DAL.csproj.CopyComplete
