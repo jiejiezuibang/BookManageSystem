@@ -29,6 +29,7 @@ namespace BookSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvReader = new System.Windows.Forms.DataGridView();
             this.btnAddReader = new System.Windows.Forms.Button();
@@ -36,7 +37,12 @@ namespace BookSystem
             this.btnDelReaderInfo = new System.Windows.Forms.Button();
             this.tbReaderID = new System.Windows.Forms.TextBox();
             this.btnFind = new System.Windows.Forms.Button();
+            this.cmsReader = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.添加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReader)).BeginInit();
+            this.cmsReader.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -54,6 +60,7 @@ namespace BookSystem
             // 
             this.dgvReader.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReader.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReader.ContextMenuStrip = this.cmsReader;
             this.dgvReader.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvReader.Location = new System.Drawing.Point(0, 118);
             this.dgvReader.Name = "dgvReader";
@@ -109,6 +116,37 @@ namespace BookSystem
             this.btnFind.UseVisualStyleBackColor = true;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
+            // cmsReader
+            // 
+            this.cmsReader.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsReader.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加ToolStripMenuItem,
+            this.修改ToolStripMenuItem,
+            this.删除ToolStripMenuItem});
+            this.cmsReader.Name = "contextMenuStrip1";
+            this.cmsReader.Size = new System.Drawing.Size(211, 104);
+            // 
+            // 添加ToolStripMenuItem
+            // 
+            this.添加ToolStripMenuItem.Name = "添加ToolStripMenuItem";
+            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.添加ToolStripMenuItem.Text = "添加";
+            this.添加ToolStripMenuItem.Click += new System.EventHandler(this.添加ToolStripMenuItem_Click);
+            // 
+            // 修改ToolStripMenuItem
+            // 
+            this.修改ToolStripMenuItem.Name = "修改ToolStripMenuItem";
+            this.修改ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.修改ToolStripMenuItem.Text = "修改";
+            this.修改ToolStripMenuItem.Click += new System.EventHandler(this.修改ToolStripMenuItem_Click);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
             // ReaderManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -126,6 +164,7 @@ namespace BookSystem
             this.Text = "ReaderManageForm";
             this.Load += new System.EventHandler(this.ReaderManageForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReader)).EndInit();
+            this.cmsReader.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +179,9 @@ namespace BookSystem
         private System.Windows.Forms.Button btnDelReaderInfo;
         private System.Windows.Forms.TextBox tbReaderID;
         private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.ContextMenuStrip cmsReader;
+        private System.Windows.Forms.ToolStripMenuItem 添加ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 修改ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
     }
 }

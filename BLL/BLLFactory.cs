@@ -1,4 +1,5 @@
 ﻿using BLL.LoginBLL;
+using BLL.ReaderMangeBLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace BLL
 
         // 静态对象字段
         private static LoginBll _GetLoginBll;
+        /// <summary>
+        /// 只读
+        /// </summary>
         public LoginBll GetLoginBll
         {
             get
@@ -25,6 +29,19 @@ namespace BLL
                     _GetLoginBll = new LoginBll();
                 }
                 return _GetLoginBll;
+            }
+        }
+        // 存储读者信息业务对象
+        private static ReaderMangeBll readerMangeBll;
+        public static ReaderMangeBll GetReaderMangeB
+        {
+            get
+            {
+                if(readerMangeBll == null)
+                {
+                    readerMangeBll = new ReaderMangeBll();
+                }
+                return readerMangeBll;
             }
         }
     }

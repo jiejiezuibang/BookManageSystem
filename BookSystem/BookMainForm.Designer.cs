@@ -31,25 +31,25 @@ namespace BookSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookMainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tsrTopMain = new System.Windows.Forms.ToolStrip();
+            this.tsrBtnBookInfo = new System.Windows.Forms.ToolStripButton();
+            this.tsrReaderInfo = new System.Windows.Forms.ToolStripButton();
+            this.tsrBtnBorrowAnnalInfo = new System.Windows.Forms.ToolStripButton();
+            this.tsrBtnBorrowReturnInfo = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panIndex = new System.Windows.Forms.Panel();
+            this.stMain = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.msMain = new System.Windows.Forms.MenuStrip();
             this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.读者管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.借还记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.stMain = new System.Windows.Forms.StatusStrip();
-            this.tsrTopMain = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.msMain.SuspendLayout();
-            this.stMain.SuspendLayout();
             this.tsrTopMain.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.stMain.SuspendLayout();
+            this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,6 +60,60 @@ namespace BookSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(942, 81);
             this.panel1.TabIndex = 0;
+            // 
+            // tsrTopMain
+            // 
+            this.tsrTopMain.ImageScalingSize = new System.Drawing.Size(80, 60);
+            this.tsrTopMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsrBtnBookInfo,
+            this.tsrReaderInfo,
+            this.tsrBtnBorrowAnnalInfo,
+            this.tsrBtnBorrowReturnInfo});
+            this.tsrTopMain.Location = new System.Drawing.Point(0, 0);
+            this.tsrTopMain.Name = "tsrTopMain";
+            this.tsrTopMain.Size = new System.Drawing.Size(942, 67);
+            this.tsrTopMain.TabIndex = 1;
+            this.tsrTopMain.Text = "toolStrip1";
+            // 
+            // tsrBtnBookInfo
+            // 
+            this.tsrBtnBookInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsrBtnBookInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsrBtnBookInfo.Image")));
+            this.tsrBtnBookInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsrBtnBookInfo.Name = "tsrBtnBookInfo";
+            this.tsrBtnBookInfo.Size = new System.Drawing.Size(84, 64);
+            this.tsrBtnBookInfo.Text = "toolStripButton1";
+            this.tsrBtnBookInfo.Click += new System.EventHandler(this.tsrBtnBookInfo_Click);
+            // 
+            // tsrReaderInfo
+            // 
+            this.tsrReaderInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsrReaderInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsrReaderInfo.Image")));
+            this.tsrReaderInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsrReaderInfo.Name = "tsrReaderInfo";
+            this.tsrReaderInfo.Size = new System.Drawing.Size(84, 64);
+            this.tsrReaderInfo.Text = "toolStripButton2";
+            this.tsrReaderInfo.Click += new System.EventHandler(this.tsrReaderInfo_Click);
+            // 
+            // tsrBtnBorrowAnnalInfo
+            // 
+            this.tsrBtnBorrowAnnalInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsrBtnBorrowAnnalInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsrBtnBorrowAnnalInfo.Image")));
+            this.tsrBtnBorrowAnnalInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsrBtnBorrowAnnalInfo.Name = "tsrBtnBorrowAnnalInfo";
+            this.tsrBtnBorrowAnnalInfo.Size = new System.Drawing.Size(84, 64);
+            this.tsrBtnBorrowAnnalInfo.Text = "toolStripButton3";
+            this.tsrBtnBorrowAnnalInfo.Click += new System.EventHandler(this.tsrBtnBorrowAnnalInfo_Click);
+            // 
+            // tsrBtnBorrowReturnInfo
+            // 
+            this.tsrBtnBorrowReturnInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsrBtnBorrowReturnInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsrBtnBorrowReturnInfo.Image")));
+            this.tsrBtnBorrowReturnInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsrBtnBorrowReturnInfo.Name = "tsrBtnBorrowReturnInfo";
+            this.tsrBtnBorrowReturnInfo.Size = new System.Drawing.Size(84, 64);
+            this.tsrBtnBorrowReturnInfo.Text = "toolStripButton4";
+            this.tsrBtnBorrowReturnInfo.Click += new System.EventHandler(this.tsrBtnBorrowReturnInfo_Click);
             // 
             // panel2
             // 
@@ -79,6 +133,23 @@ namespace BookSystem
             this.panIndex.Name = "panIndex";
             this.panIndex.Size = new System.Drawing.Size(942, 563);
             this.panIndex.TabIndex = 2;
+            // 
+            // stMain
+            // 
+            this.stMain.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.stMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.stMain.Location = new System.Drawing.Point(0, 591);
+            this.stMain.Name = "stMain";
+            this.stMain.Size = new System.Drawing.Size(942, 26);
+            this.stMain.TabIndex = 1;
+            this.stMain.Text = "已登录";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(54, 20);
+            this.toolStripStatusLabel1.Text = "已登录";
             // 
             // msMain
             // 
@@ -122,73 +193,6 @@ namespace BookSystem
             this.图书ToolStripMenuItem.Text = "图书借还";
             this.图书ToolStripMenuItem.Click += new System.EventHandler(this.图书ToolStripMenuItem_Click);
             // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(54, 20);
-            this.toolStripStatusLabel1.Text = "已登录";
-            // 
-            // stMain
-            // 
-            this.stMain.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.stMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.stMain.Location = new System.Drawing.Point(0, 591);
-            this.stMain.Name = "stMain";
-            this.stMain.Size = new System.Drawing.Size(942, 26);
-            this.stMain.TabIndex = 1;
-            this.stMain.Text = "已登录";
-            // 
-            // tsrTopMain
-            // 
-            this.tsrTopMain.ImageScalingSize = new System.Drawing.Size(80, 60);
-            this.tsrTopMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4});
-            this.tsrTopMain.Location = new System.Drawing.Point(0, 0);
-            this.tsrTopMain.Name = "tsrTopMain";
-            this.tsrTopMain.Size = new System.Drawing.Size(942, 87);
-            this.tsrTopMain.TabIndex = 1;
-            this.tsrTopMain.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(104, 84);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(104, 84);
-            this.toolStripButton2.Text = "toolStripButton2";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(104, 84);
-            this.toolStripButton3.Text = "toolStripButton3";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(104, 84);
-            this.toolStripButton4.Text = "toolStripButton4";
-            // 
             // BookMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -203,14 +207,14 @@ namespace BookSystem
             this.Load += new System.EventHandler(this.BookMainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.msMain.ResumeLayout(false);
-            this.msMain.PerformLayout();
-            this.stMain.ResumeLayout(false);
-            this.stMain.PerformLayout();
             this.tsrTopMain.ResumeLayout(false);
             this.tsrTopMain.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.stMain.ResumeLayout(false);
+            this.stMain.PerformLayout();
+            this.msMain.ResumeLayout(false);
+            this.msMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -228,9 +232,9 @@ namespace BookSystem
         private System.Windows.Forms.StatusStrip stMain;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStrip tsrTopMain;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton tsrBtnBookInfo;
+        private System.Windows.Forms.ToolStripButton tsrReaderInfo;
+        private System.Windows.Forms.ToolStripButton tsrBtnBorrowAnnalInfo;
+        private System.Windows.Forms.ToolStripButton tsrBtnBorrowReturnInfo;
     }
 }

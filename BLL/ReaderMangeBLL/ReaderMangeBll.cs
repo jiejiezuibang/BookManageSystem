@@ -1,4 +1,4 @@
-﻿using DAL.ReaderManageDal;
+﻿using DAL;
 using MOD;
 using MOD.Enums;
 using System;
@@ -12,7 +12,7 @@ namespace BLL.ReaderMangeBLL
 {
     public class ReaderMangeBll
     {
-        RanderManageDal randerManageDal = new RanderManageDal();
+        RanderManageDal randerManageDal = DALFactory.GetRanderManageDal;
         /// <summary>
         /// 获取读者信息
         /// </summary>

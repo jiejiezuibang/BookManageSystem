@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using MOD;
 
-namespace DAL.ReaderManageDal
+namespace DAL
 {
     public class RanderManageDal
     {
@@ -70,10 +70,10 @@ EMail=@EMail,Address=@Address,Mobile=@Mobile where ReaderID=@ReaderID";
         /// <returns></returns>
         public int DelReader(ReaderInfoMod readerInfoMod)
         {
-            string sql = "delete from ReaderInfo where ReaderID=@ReaderID";
+            string sql = "delete from ReaderInfo where ID=@ID";
             SqlParameter[] sqlpar =
             {
-                new SqlParameter("@ReaderID",readerInfoMod.ReaderID),
+                new SqlParameter("@ID",readerInfoMod.ID),
             };
             int result = sqlHelp.SqlOperate(sql, sqlpar);
             return result;

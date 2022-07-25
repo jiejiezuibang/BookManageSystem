@@ -29,5 +29,21 @@ namespace DAL
                 return _GetLoginDal;
             }
         }
+        // 静态对象字段
+        private static RanderManageDal _ReaderManageDal;
+        /// <summary>
+        /// 只读，通过属性方式返回对象
+        /// </summary>
+        public static RanderManageDal GetRanderManageDal
+        {
+            get
+            {
+                if(_ReaderManageDal == null)
+                {
+                    _ReaderManageDal = new RanderManageDal();
+                }
+                return _ReaderManageDal;
+            }
+        }
     }
 }

@@ -49,7 +49,7 @@
     <Compile Include="DALFactory.cs" />
     <Compile Include="LoginDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReaderManageDal\RanderManageDal.cs" />
+    <Compile Include="RanderManageDal.cs" />
     <Compile Include="SqlHelp.cs" />
   </ItemGroup>
   <ItemGroup>

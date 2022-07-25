@@ -142,5 +142,41 @@ namespace BookSystem
             // 设置窗体的状态栏信息标签
             toolStatusLable();
         }
+        /// <summary>
+        /// 点击图书信息选项卡
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsrBtnBookInfo_Click(object sender, EventArgs e)
+        {
+            LoadForm(new BookManageForm());
+        }
+        /// <summary>
+        /// 点击读者选项卡
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsrReaderInfo_Click(object sender, EventArgs e)
+        {
+            LoadForm(new ReaderManageForm());
+        }
+        /// <summary>
+        /// 点击借还记录选项卡
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsrBtnBorrowAnnalInfo_Click(object sender, EventArgs e)
+        {
+            LoadForm(new BorrowAnnalForm());
+        }
+        /// <summary>
+        /// 点击借还书选项卡
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsrBtnBorrowReturnInfo_Click(object sender, EventArgs e)
+        {
+            LoadForm(new BookBorrowForm());
+        }
     }
 }

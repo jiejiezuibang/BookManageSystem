@@ -1,5 +1,5 @@
-﻿using DAL.BookBorrowDal;
-using DAL.ReaderManageDal;
+﻿using DAL;
+using DAL.BookBorrowDal;
 using MOD;
 using MOD.Enums;
 using System;
@@ -20,7 +20,7 @@ namespace BLL.BookBorrowBLL
         /// <returns></returns>
         public DataTable FindRederInfo(ReaderInfoMod readerInfoMod)
         {
-            RanderManageDal randerManageDal = new RanderManageDal();
+            RanderManageDal randerManageDal = DALFactory.GetRanderManageDal;
             DataTable dt = randerManageDal.FindReader(readerInfoMod);
             return dt;
         }
