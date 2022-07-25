@@ -48,7 +48,9 @@
     <Compile Include="Enums\BookBorrowReturnInfoEnums.cs" />
     <Compile Include="Enums\BookInfoEnums.cs" />
     <Compile Include="Enums\BorrowAnnalEnums.cs" />
+    <Compile Include="Enums\LoginStateEnms.cs" />
     <Compile Include="Enums\ReaderInfoEnums.cs" />
+    <Compile Include="LoginMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReaderInfoMod.cs" />
   </ItemGroup>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace DAL
 {
@@ -14,7 +15,7 @@ namespace DAL
     public class SqlHelp
     {
         // 连接数据库字符串
-        private string connStr = @"server=DESKTOP-FSDTD8V\SQLEXPRESS;database=BookDB;uid=sa;pwd=123";
+        private string connStr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
         /// <summary>
         /// 获取数据表(有参)
         /// </summary>

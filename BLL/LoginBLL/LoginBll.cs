@@ -1,5 +1,7 @@
-﻿using DAL.LoginDal;
+﻿using DAL;
 using DAL.Tools;
+using MOD;
+using MOD.Enums;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,29 +13,42 @@ namespace BLL.LoginBLL
 {
     public class LoginBll
     {
+        // 创建登录信息的数据访问层对象
+        LoginDal loginDal = DALFactory.GetLoginDal;
         /// <summary>
-        /// 校验登录是否成功
+        /// 根据账号查找对象
         /// </summary>
-        /// <param name="Name"></param>
-        /// <param name="Pwd"></param>
+        /// <param name="Name">账号</param>
+        /// <param name="Pwd">密码</param>
         /// <returns></returns>
-        public string LoginCheck(string Name,string Pwd)
+        public LoginStateEnms LoginCheck(string Name,string Pwd)
         {
             try
             {
-                LoginDal loginDal = new LoginDal();
-                MD5Encrypt mD5Encrypt = new MD5Encrypt();
-                // 对用户输入的字符串进行加密
-                Pwd = mD5Encrypt.GetStr(Pwd);
-                DataTable dt = loginDal.getAnminInfo(Name, Pwd);
-                if (dt.Rows.Count == 0)
+                // 根据用户名进行对象的查询
+                LoginMod loginMod = loginDal.getAnminInfo(Name);
+                if(loginMod == null)
                 {
-                    return "400";
+                    // 账号错误
+                    return LoginStateEnms.LoginIDError;
                 }
-                return "200";
-            }catch(Exception ex)
+                MD5Encrypt mD5Encrypt = new MD5Encrypt();
+                // 账号正确，判断密码
+                if (loginMod.AdminPWD.Equals(mD5Encrypt.GetStr(Pwd)))
+                {
+                    // 密码正确，登录成功
+                    return LoginStateEnms.Ok;
+                }
+                else
+                {
+                    // 密码错误
+                    return LoginStateEnms.LoginPwdError;
+                }
+            }
+            catch
             {
-                return "404" + ex.ToString();
+                // 发生异常
+                return LoginStateEnms.LoginError;
             }
         }
     }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLFactory.cs" />
     <Compile Include="BookBorrowBLL\BookBorrowBll.cs" />
     <Compile Include="BookInfoBLL\BookInfoBll.cs" />
     <Compile Include="BorrowAnnalBLL\BorrowAnnalBll.cs" />
