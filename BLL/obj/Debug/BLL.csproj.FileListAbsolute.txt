@@ -11,3 +11,16 @@ G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\Tools.dll
 G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\Tools.pdb
 G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\MOD.dll
 G:\vsdm\WinForm学习\BookSystem\BLL\bin\Debug\MOD.pdb
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\BLL.dll
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\BLL.pdb
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\DAL.dll
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\MOD.dll
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\Tools.dll
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\DAL.pdb
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\MOD.pdb
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\bin\Debug\Tools.pdb
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\obj\Debug\BLL.dll
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\BLL\obj\Debug\BLL.pdb
