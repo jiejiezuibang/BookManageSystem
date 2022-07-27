@@ -120,6 +120,9 @@ namespace BookSystem
             this.ClientSize = new System.Drawing.Size(826, 483);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.Text = "登录";
             this.panel1.ResumeLayout(false);

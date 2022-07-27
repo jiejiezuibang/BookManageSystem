@@ -43,8 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookBorrowDal\BookBorrowDal.cs" />
-    <Compile Include="BookInfoDal\BookCategoryDal.cs" />
-    <Compile Include="BookInfoDal\BookInfoDal.cs" />
+    <Compile Include="BookDal\BookCategoryDal.cs" />
+    <Compile Include="BookDal\BookInfoDal.cs" />
     <Compile Include="BorrowAnnalDal\BorrowAnnalDal.cs" />
     <Compile Include="DALFactory.cs" />
     <Compile Include="LoginDal.cs" />

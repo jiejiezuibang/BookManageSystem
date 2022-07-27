@@ -141,6 +141,8 @@ namespace BookSystem
         {
             // 设置窗体的状态栏信息标签
             toolStatusLable();
+            // 加载图书信息窗体
+            LoadForm(new BookManageForm());
         }
         /// <summary>
         /// 点击图书信息选项卡

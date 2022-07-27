@@ -16,7 +16,7 @@ namespace BookSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookMainForm());
+            Application.Run(new LoginForm());
         }
     }
 }

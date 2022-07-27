@@ -58,7 +58,7 @@ namespace BookSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(942, 81);
+            this.panel1.Size = new System.Drawing.Size(1085, 81);
             this.panel1.TabIndex = 0;
             // 
             // tsrTopMain
@@ -71,7 +71,7 @@ namespace BookSystem
             this.tsrBtnBorrowReturnInfo});
             this.tsrTopMain.Location = new System.Drawing.Point(0, 0);
             this.tsrTopMain.Name = "tsrTopMain";
-            this.tsrTopMain.Size = new System.Drawing.Size(942, 67);
+            this.tsrTopMain.Size = new System.Drawing.Size(1085, 67);
             this.tsrTopMain.TabIndex = 1;
             this.tsrTopMain.Text = "toolStrip1";
             // 
@@ -123,15 +123,15 @@ namespace BookSystem
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 81);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(942, 617);
+            this.panel2.Size = new System.Drawing.Size(1085, 659);
             this.panel2.TabIndex = 1;
             // 
             // panIndex
             // 
             this.panIndex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panIndex.Location = new System.Drawing.Point(0, 28);
+            this.panIndex.Location = new System.Drawing.Point(0, 30);
             this.panIndex.Name = "panIndex";
-            this.panIndex.Size = new System.Drawing.Size(942, 563);
+            this.panIndex.Size = new System.Drawing.Size(1085, 603);
             this.panIndex.TabIndex = 2;
             // 
             // stMain
@@ -139,9 +139,9 @@ namespace BookSystem
             this.stMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.stMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.stMain.Location = new System.Drawing.Point(0, 591);
+            this.stMain.Location = new System.Drawing.Point(0, 633);
             this.stMain.Name = "stMain";
-            this.stMain.Size = new System.Drawing.Size(942, 26);
+            this.stMain.Size = new System.Drawing.Size(1085, 26);
             this.stMain.TabIndex = 1;
             this.stMain.Text = "已登录";
             // 
@@ -161,35 +161,35 @@ namespace BookSystem
             this.图书ToolStripMenuItem});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
-            this.msMain.Size = new System.Drawing.Size(942, 28);
+            this.msMain.Size = new System.Drawing.Size(1085, 30);
             this.msMain.TabIndex = 0;
             this.msMain.Text = "menuStrip1";
             // 
             // 图书管理ToolStripMenuItem
             // 
             this.图书管理ToolStripMenuItem.Name = "图书管理ToolStripMenuItem";
-            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
             this.图书管理ToolStripMenuItem.Text = "图书管理";
             this.图书管理ToolStripMenuItem.Click += new System.EventHandler(this.图书管理ToolStripMenuItem_Click);
             // 
             // 读者管理ToolStripMenuItem
             // 
             this.读者管理ToolStripMenuItem.Name = "读者管理ToolStripMenuItem";
-            this.读者管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.读者管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
             this.读者管理ToolStripMenuItem.Text = "读者管理";
             this.读者管理ToolStripMenuItem.Click += new System.EventHandler(this.读者管理ToolStripMenuItem_Click);
             // 
             // 借还记录ToolStripMenuItem
             // 
             this.借还记录ToolStripMenuItem.Name = "借还记录ToolStripMenuItem";
-            this.借还记录ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.借还记录ToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
             this.借还记录ToolStripMenuItem.Text = "借还记录";
             this.借还记录ToolStripMenuItem.Click += new System.EventHandler(this.借还记录ToolStripMenuItem_Click);
             // 
             // 图书ToolStripMenuItem
             // 
             this.图书ToolStripMenuItem.Name = "图书ToolStripMenuItem";
-            this.图书ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.图书ToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
             this.图书ToolStripMenuItem.Text = "图书借还";
             this.图书ToolStripMenuItem.Click += new System.EventHandler(this.图书ToolStripMenuItem_Click);
             // 
@@ -197,10 +197,13 @@ namespace BookSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 698);
+            this.ClientSize = new System.Drawing.Size(1085, 740);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.msMain;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BookMainForm";
             this.Text = "图书管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BookMainForm_FormClosing);

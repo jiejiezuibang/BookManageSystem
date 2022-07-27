@@ -29,6 +29,8 @@ namespace BookSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookManageForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAddBook = new System.Windows.Forms.Button();
             this.btnFindBook = new System.Windows.Forms.Button();
@@ -38,6 +40,7 @@ namespace BookSystem
             this.tvBookList = new System.Windows.Forms.TreeView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvBookInfo = new System.Windows.Forms.DataGridView();
+            this.imgtv = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -53,14 +56,14 @@ namespace BookSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(942, 114);
+            this.panel1.Size = new System.Drawing.Size(1085, 114);
             this.panel1.TabIndex = 0;
             // 
             // btnAddBook
             // 
-            this.btnAddBook.Location = new System.Drawing.Point(718, 37);
+            this.btnAddBook.Location = new System.Drawing.Point(838, 37);
             this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.Size = new System.Drawing.Size(97, 34);
+            this.btnAddBook.Size = new System.Drawing.Size(104, 44);
             this.btnAddBook.TabIndex = 3;
             this.btnAddBook.Text = "添加图书";
             this.btnAddBook.UseVisualStyleBackColor = true;
@@ -68,9 +71,9 @@ namespace BookSystem
             // 
             // btnFindBook
             // 
-            this.btnFindBook.Location = new System.Drawing.Point(447, 37);
+            this.btnFindBook.Location = new System.Drawing.Point(540, 37);
             this.btnFindBook.Name = "btnFindBook";
-            this.btnFindBook.Size = new System.Drawing.Size(75, 34);
+            this.btnFindBook.Size = new System.Drawing.Size(82, 44);
             this.btnFindBook.TabIndex = 2;
             this.btnFindBook.Text = "搜索";
             this.btnFindBook.UseVisualStyleBackColor = true;
@@ -78,17 +81,18 @@ namespace BookSystem
             // 
             // tbBookID
             // 
-            this.tbBookID.Location = new System.Drawing.Point(299, 44);
+            this.tbBookID.Location = new System.Drawing.Point(393, 49);
             this.tbBookID.Name = "tbBookID";
-            this.tbBookID.Size = new System.Drawing.Size(117, 25);
+            this.tbBookID.Size = new System.Drawing.Size(124, 25);
             this.tbBookID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 54);
+            this.label1.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(209, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 15);
+            this.label1.Size = new System.Drawing.Size(159, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "请输入图书编号:";
             // 
@@ -98,15 +102,18 @@ namespace BookSystem
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 114);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 447);
+            this.panel2.Size = new System.Drawing.Size(193, 491);
             this.panel2.TabIndex = 1;
             // 
             // tvBookList
             // 
             this.tvBookList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tvBookList.ImageIndex = 0;
+            this.tvBookList.ImageList = this.imgtv;
             this.tvBookList.Location = new System.Drawing.Point(0, 0);
             this.tvBookList.Name = "tvBookList";
-            this.tvBookList.Size = new System.Drawing.Size(193, 447);
+            this.tvBookList.SelectedImageIndex = 0;
+            this.tvBookList.Size = new System.Drawing.Size(193, 491);
             this.tvBookList.TabIndex = 0;
             this.tvBookList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvBookList_AfterSelect);
             // 
@@ -116,26 +123,34 @@ namespace BookSystem
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(193, 114);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(749, 447);
+            this.panel3.Size = new System.Drawing.Size(892, 491);
             this.panel3.TabIndex = 2;
             // 
             // dgvBookInfo
             // 
+            this.dgvBookInfo.AllowUserToAddRows = false;
             this.dgvBookInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBookInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBookInfo.Location = new System.Drawing.Point(0, 0);
             this.dgvBookInfo.Name = "dgvBookInfo";
             this.dgvBookInfo.RowHeadersWidth = 51;
             this.dgvBookInfo.RowTemplate.Height = 27;
-            this.dgvBookInfo.Size = new System.Drawing.Size(749, 447);
+            this.dgvBookInfo.Size = new System.Drawing.Size(892, 491);
             this.dgvBookInfo.TabIndex = 0;
             this.dgvBookInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookInfo_CellContentClick);
+            // 
+            // imgtv
+            // 
+            this.imgtv.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgtv.ImageStream")));
+            this.imgtv.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgtv.Images.SetKeyName(0, "4.png");
+            this.imgtv.Images.SetKeyName(1, "3.png");
             // 
             // BookManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 561);
+            this.ClientSize = new System.Drawing.Size(1085, 605);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -163,5 +178,6 @@ namespace BookSystem
         private System.Windows.Forms.TreeView tvBookList;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvBookInfo;
+        private System.Windows.Forms.ImageList imgtv;
     }
 }

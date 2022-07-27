@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.BookDal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,32 @@ namespace DAL
                     _ReaderManageDal = new RanderManageDal();
                 }
                 return _ReaderManageDal;
+            }
+        }
+        // 存储操作图书类别信息对象
+        private static BookCategoryDal bookCategoryDal;
+        public static BookCategoryDal GetBookCategoryDal
+        {
+            get
+            {
+                if(bookCategoryDal == null)
+                {
+                    bookCategoryDal = new BookCategoryDal();
+                }
+                return bookCategoryDal;
+            }
+        }
+        // 存储操作图书信息对象
+        private static BookInfoDal bookInfoDal;
+        public static BookInfoDal GetBookInfoDal
+        {
+            get
+            {
+                if(bookInfoDal == null)
+                {
+                    bookInfoDal = new BookInfoDal();
+                }
+                return bookInfoDal;
             }
         }
     }

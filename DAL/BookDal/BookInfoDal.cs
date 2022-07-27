@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using MOD;
 
-namespace DAL.BookInfoDal
+namespace DAL.BookDal
 {
     public class BookInfoDal
     {

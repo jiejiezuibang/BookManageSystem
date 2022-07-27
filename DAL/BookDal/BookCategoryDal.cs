@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.BookInfoDal
+namespace DAL.BookDal
 {
     public class BookCategoryDal
     {
@@ -26,11 +26,29 @@ namespace DAL.BookInfoDal
         /// 获取全部图书类型
         /// </summary>
         /// <returns></returns>
-        public DataTable GetAllBookType()
+        public List<BookCategoryMod> GetAllBookType()
         {
             string sql = "select * from BookCategory";
             DataTable dt = sqlHelp.GetDataTable(sql);
-            return dt;
+            
+            List<BookCategoryMod> list = null;
+            if(dt.Rows.Count > 0)
+            {
+                list = new List<BookCategoryMod>();
+                // 这里类型要DataRow，不然无法tostring
+                foreach(DataRow row in dt.Rows)
+                {
+                    // 创建图书类型对象并赋值，然后添加到list集合中
+                    list.Add(new BookCategoryMod()
+                    {
+                        ID = int.Parse(row["ID"].ToString()),
+                        CategoryID = int.Parse(row["CategoryID"].ToString()),
+                        CategoryName = row["CategoryName"].ToString(),
+                        ParentID = int.Parse(row["ParentID"].ToString())
+                    });
+                }
+            }
+            return list;
         }
         /// <summary>
         /// 根据图书类别查找图书信息(子类)

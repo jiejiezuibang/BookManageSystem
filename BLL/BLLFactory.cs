@@ -1,4 +1,5 @@
-﻿using BLL.LoginBLL;
+﻿using BLL.BookInfoBLL;
+using BLL.LoginBLL;
 using BLL.ReaderMangeBLL;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,19 @@ namespace BLL
                     readerMangeBll = new ReaderMangeBll();
                 }
                 return readerMangeBll;
+            }
+        }
+        // 存储图书信息业务对象
+        private static BookInfoBll bookInfoBll;
+        public static BookInfoBll GetBookInfoBll
+        {
+            get
+            {
+                if(bookInfoBll == null)
+                {
+                    bookInfoBll = new BookInfoBll();
+                }
+                return bookInfoBll;
             }
         }
     }

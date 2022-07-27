@@ -1,5 +1,4 @@
-﻿using DAL.BookInfoDal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +7,15 @@ using System.Data;
 using System.Data.SqlClient;
 using MOD;
 using MOD.Enums;
+using DAL.BookDal;
+using DAL;
 
 namespace BLL.BookInfoBLL
 {
     public class BookInfoBll
     {
-        BookInfoDal bookInfoDal = new BookInfoDal();
+        BookInfoDal bookInfoDal = DALFactory.GetBookInfoDal;
+        BookCategoryDal bookCategoryDal = DALFactory.GetBookCategoryDal;
         /// <summary>
         /// 获取图书信息业务
         /// </summary>
@@ -84,11 +86,9 @@ namespace BLL.BookInfoBLL
         /// 获取全部图书类别业务
         /// </summary>
         /// <returns></returns>
-        public DataTable GetAllBookType()
+        public List<BookCategoryMod> GetAllBookType()
         {
-            BookCategoryDal bookCategoryDal = new BookCategoryDal();
-            DataTable dt = bookCategoryDal.GetAllBookType();
-            return dt;
+            return bookCategoryDal.GetAllBookType();
         }
         /// <summary>
         /// 删除图书业务

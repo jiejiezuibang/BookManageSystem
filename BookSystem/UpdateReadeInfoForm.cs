@@ -42,14 +42,23 @@ namespace BookSystem
                 return false;
             }
             // 判断读者邮箱格式是否正确
-            if (!Regex.IsMatch(tbEmail.Text.Trim(), @"^\w+@\w+.[a-z]{3-6}$"))
+            if (tbEmail.Text.Trim() == "")
+            {
+
+            }
+            else if (!Regex.IsMatch(tbEmail.Text.Trim(), @"^[1-9][0-9]{4,}@qq.com$"))
             {
                 MessageBox.Show("读者邮箱格式错误");
                 tbEmail.Focus(); // 获得焦点
                 tbEmail.Text = null; // 清空输入框
                 return false;
             }
-            if (!Regex.IsMatch(tbMobil.Text.Trim(), @"^[1]+[3,5]+\d{9}"))
+            // 判断读者手机号格式是否正确
+            if (tbMobil.Text.Trim() == "")
+            {
+
+            }
+            else if (!Regex.IsMatch(tbMobil.Text.Trim(), @"^1[3456789]\d{9}$"))
             {
                 MessageBox.Show("读者手机号码格式错误");
                 tbMobil.Focus(); // 获得焦点
@@ -83,7 +92,11 @@ namespace BookSystem
             // 校验读者数据的数据
             if (CheckData())
             {
+                // 获取用户输入的数据
+                GetData();
+                // 执行修改操作
                 ReaderInfoEnums readerInfoEnums = readerMangeBll.UpdateReaderInfo(readerInfoMod);
+                // 判断是否修改成功
                 switch (readerInfoEnums)
                 {
                     case ReaderInfoEnums.UpdateSuccess:

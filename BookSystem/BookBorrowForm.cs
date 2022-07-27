@@ -69,11 +69,6 @@ namespace BookSystem
                 dgvBookBorrowInfo.DataSource = null;
             }
         }
-
-        private void BookBorrowForm_Load(object sender, EventArgs e)
-        {
-
-        }
         /// <summary>
         /// 点击确定借书
         /// </summary>

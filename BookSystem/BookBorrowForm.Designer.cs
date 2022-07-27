@@ -50,7 +50,7 @@ namespace BookSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(304, 28);
+            this.label1.Location = new System.Drawing.Point(377, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 15);
             this.label1.TabIndex = 0;
@@ -58,14 +58,14 @@ namespace BookSystem
             // 
             // tbReaderID
             // 
-            this.tbReaderID.Location = new System.Drawing.Point(417, 18);
+            this.tbReaderID.Location = new System.Drawing.Point(490, 18);
             this.tbReaderID.Name = "tbReaderID";
             this.tbReaderID.Size = new System.Drawing.Size(128, 25);
             this.tbReaderID.TabIndex = 1;
             // 
             // btnFindRederInfo
             // 
-            this.btnFindRederInfo.Location = new System.Drawing.Point(577, 12);
+            this.btnFindRederInfo.Location = new System.Drawing.Point(650, 12);
             this.btnFindRederInfo.Name = "btnFindRederInfo";
             this.btnFindRederInfo.Size = new System.Drawing.Size(75, 31);
             this.btnFindRederInfo.TabIndex = 2;
@@ -102,7 +102,7 @@ namespace BookSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(307, 60);
+            this.label3.Location = new System.Drawing.Point(417, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 15);
             this.label3.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace BookSystem
             // lbReaderID
             // 
             this.lbReaderID.AutoSize = true;
-            this.lbReaderID.Location = new System.Drawing.Point(381, 60);
+            this.lbReaderID.Location = new System.Drawing.Point(491, 62);
             this.lbReaderID.Name = "lbReaderID";
             this.lbReaderID.Size = new System.Drawing.Size(0, 15);
             this.lbReaderID.TabIndex = 7;
@@ -119,7 +119,7 @@ namespace BookSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(490, 60);
+            this.label4.Location = new System.Drawing.Point(600, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 8;
@@ -128,35 +128,37 @@ namespace BookSystem
             // lbReaderName
             // 
             this.lbReaderName.AutoSize = true;
-            this.lbReaderName.Location = new System.Drawing.Point(579, 59);
+            this.lbReaderName.Location = new System.Drawing.Point(663, 62);
             this.lbReaderName.Name = "lbReaderName";
             this.lbReaderName.Size = new System.Drawing.Size(0, 15);
             this.lbReaderName.TabIndex = 9;
             // 
             // dgvBookInfo
             // 
+            this.dgvBookInfo.AllowUserToAddRows = false;
             this.dgvBookInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBookInfo.Location = new System.Drawing.Point(100, 154);
             this.dgvBookInfo.Name = "dgvBookInfo";
             this.dgvBookInfo.RowHeadersWidth = 51;
             this.dgvBookInfo.RowTemplate.Height = 27;
-            this.dgvBookInfo.Size = new System.Drawing.Size(748, 144);
+            this.dgvBookInfo.Size = new System.Drawing.Size(888, 144);
             this.dgvBookInfo.TabIndex = 10;
             // 
             // dgvBookBorrowInfo
             // 
+            this.dgvBookBorrowInfo.AllowUserToAddRows = false;
             this.dgvBookBorrowInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBookBorrowInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBookBorrowInfo.Location = new System.Drawing.Point(100, 362);
             this.dgvBookBorrowInfo.Name = "dgvBookBorrowInfo";
             this.dgvBookBorrowInfo.RowHeadersWidth = 51;
             this.dgvBookBorrowInfo.RowTemplate.Height = 27;
-            this.dgvBookBorrowInfo.Size = new System.Drawing.Size(748, 144);
+            this.dgvBookBorrowInfo.Size = new System.Drawing.Size(888, 144);
             this.dgvBookBorrowInfo.TabIndex = 11;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(758, 313);
+            this.button3.Location = new System.Drawing.Point(898, 313);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 32);
             this.button3.TabIndex = 12;
@@ -166,7 +168,7 @@ namespace BookSystem
             // 
             // btnReturnBook
             // 
-            this.btnReturnBook.Location = new System.Drawing.Point(758, 519);
+            this.btnReturnBook.Location = new System.Drawing.Point(898, 521);
             this.btnReturnBook.Name = "btnReturnBook";
             this.btnReturnBook.Size = new System.Drawing.Size(90, 32);
             this.btnReturnBook.TabIndex = 13;
@@ -178,7 +180,7 @@ namespace BookSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 563);
+            this.ClientSize = new System.Drawing.Size(1085, 605);
             this.Controls.Add(this.btnReturnBook);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dgvBookBorrowInfo);
@@ -196,7 +198,6 @@ namespace BookSystem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookBorrowForm";
             this.Text = "BookBorrowForm";
-            this.Load += new System.EventHandler(this.BookBorrowForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookBorrowInfo)).EndInit();
             this.ResumeLayout(false);

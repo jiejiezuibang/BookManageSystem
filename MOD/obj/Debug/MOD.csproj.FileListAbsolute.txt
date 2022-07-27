@@ -6,7 +6,7 @@ G:\vsdm\WinForm学习\BookSystem\MOD\obj\Debug\MOD.pdb
 G:\vsdm\WinForm学习\BookSystem\MOD\obj\Debug\MOD.csproj.AssemblyReference.cache
 G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\bin\Debug\MOD.dll
 G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\bin\Debug\MOD.pdb
-G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\obj\Debug\MOD.csproj.AssemblyReference.cache
 G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\obj\Debug\MOD.csproj.CoreCompileInputs.cache
 G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\obj\Debug\MOD.dll
 G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\obj\Debug\MOD.pdb
+G:\20级水电.NET开发一班覃坤\实训项目\图书管理系统\BookSystem\MOD\obj\Debug\MOD.csproj.AssemblyReference.cache

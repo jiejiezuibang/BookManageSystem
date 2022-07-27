@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -57,11 +58,36 @@ namespace BookSystem
         /// <returns></returns>
         public bool CheckData()
         {
+            // 判断读者姓名不能为空
             if (string.IsNullOrWhiteSpace(tbReaderName.Text.Trim()))
             {
-                MessageBox.Show("图书名称不能为空");
-                tbReaderName.Text = null;
-                tbReaderName.Focus();
+                MessageBox.Show("读者姓名不能为空");
+                tbReaderName.Focus(); // 获得焦点
+                tbReaderName.Text = null;  // 清空输入框
+                return false;
+            }
+            // 判断读者邮箱格式是否正确
+            if (tbEmail.Text.Trim() == "")
+            {
+
+            }
+            else if (!Regex.IsMatch(tbEmail.Text.Trim(), @"^[1-9][0-9]{4,}@qq.com$"))
+            {
+                MessageBox.Show("读者邮箱格式错误");
+                tbEmail.Focus(); // 获得焦点
+                tbEmail.Text = null; // 清空输入框
+                return false;
+            }
+            // 判断读者手机号格式是否正确
+            if (tbMobil.Text.Trim() == "")
+            {
+
+            }
+            else if (!Regex.IsMatch(tbMobil.Text.Trim(), @"^1[3456789]\d{9}$"))
+            {
+                MessageBox.Show("读者手机号码格式错误");
+                tbMobil.Focus(); // 获得焦点
+                tbMobil.Text = null; // 清空输入框
                 return false;
             }
             return true;
